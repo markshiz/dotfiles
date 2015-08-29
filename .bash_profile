@@ -29,8 +29,10 @@ alias be='bundle exec'
 alias tmux='TERM=xterm-256color tmux'
 alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias lcc="logcat-color"
 
 set -o vi
+source `which resty`
 source $HOME/.rvm/scripts/rvm
 source $HOME/.dotfiles/mysql-colorize.bash/mysql-colorize.bash 
 source $HOME/.dotfiles/powerline.bash/bash-powerline.sh
