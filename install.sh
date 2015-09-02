@@ -1,5 +1,6 @@
 #!/bin/bash
 
+git submodule update --init --recursive
 brew install bash-completion
 brew install resty
 pip install logcat-color
