@@ -8,6 +8,7 @@ pip install --upgrade pip
 pip install bpython
 pip install logcat-color
 pip install ropevim
+curl https://sdk.cloud.google.com | bash
 rm -rf ~/.bash_profile
 rm -rf ~/.tmux.conf
 rm -rf ~/.pythonrc.py
