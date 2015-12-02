@@ -34,7 +34,6 @@ alias lcc="logcat-color"
 set -o vi
 source `which resty`
 source $HOME/.rvm/scripts/rvm
-source $HOME/.dotfiles/mysql-colorize.bash/mysql-colorize.bash 
 source $HOME/.dotfiles/powerline.bash/bash-powerline.sh
 source $HOME/.dotfiles/bash16.bash/base16-default.dark.sh
 
