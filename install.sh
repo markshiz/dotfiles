@@ -7,7 +7,9 @@ brew install python
 pip install --upgrade pip
 pip install bpython
 pip install logcat-color
-pip install ropevim
+pip install flake8
+pip install pylint
+
 curl https://sdk.cloud.google.com | bash
 rm -rf ~/.bash_profile
 rm -rf ~/.tmux.conf
