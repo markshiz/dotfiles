@@ -10,12 +10,11 @@ case $TERM in
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR="true"
 export TERM="xterm-256color"
-#export PS1="\[\033[01;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 export NODE_PATH=/usr/local/lib/node_modules
-#export PYTHONPATH=/usr/local/lib/python2.7/site-packages
 export PYTHONSTARTUP=~/.pythonrc.py
 export PATH=/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/local/git/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/sbin:/Applications/MAMP/Library/bin:/usr/local/android/ndk/current:/usr/local/android/sdk/current/tools:/usr/local/android/sdk/current/platform-tools:/usr/local/opt/go/libexec/bin:/usr/local/heroku/bin:$HOME/.rvm/bin:$PATH
 export ANDROID_HOME=/usr/local/android/sdk/current/
+export GOPATH="/code/go"
 
 alias g='git'
 alias grep='grep --color=auto'
