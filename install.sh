@@ -17,3 +17,4 @@ ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/.pythonrc.py ~/.pythonrc.py
 
+\curl -sSL https://get.rvm.io | bash -s stable
