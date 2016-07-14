@@ -2,7 +2,6 @@
 
 git submodule update --init --recursive
 brew install bash-completion
-brew install resty
 brew install python
 pip install --upgrade pip
 pip install bpython

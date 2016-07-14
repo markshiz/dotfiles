@@ -31,7 +31,6 @@ alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias lcc="logcat-color"
 
 set -o vi
-source `which resty`
 source $HOME/.rvm/scripts/rvm
 source $HOME/.dotfiles/powerline.bash/bash-powerline.sh
 source $HOME/.dotfiles/bash16.bash/base16-default.dark.sh
