@@ -2,6 +2,7 @@
 
 git submodule update --init --recursive
 brew install bash-completion
+brew install heroku
 brew install python
 pip install --upgrade pip
 pip install bpython
