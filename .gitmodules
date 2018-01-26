@@ -7,3 +7,6 @@
 [submodule "bash16.bash"]
 	path = bash16.bash
 	url = https://github.com/chriskempson/base16-shell
+[submodule "powerline_fonts"]
+	path = powerline_fonts
+	url = https://github.com/powerline/fonts
