@@ -1,6 +1,7 @@
 #!/bin/bash
 
 git submodule update --init --recursive
+brew install macvim
 brew install bash-completion
 brew install heroku
 brew install python
