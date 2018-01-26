@@ -1,5 +1,7 @@
 #!/bin/bash
 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+xcode-select --install
 git submodule update --init --recursive
 brew install macvim
 brew install bash-completion
