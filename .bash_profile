@@ -48,7 +48,13 @@ fi
 export SPARK_LOCAL_IP="127.0.0.1"
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/usr/local/google-cloud-sdk/path.bash.inc'
+source "$HOME/google-cloud-sdk/path.bash.inc"
 
 # The next line enables shell command completion for gcloud.
-source '/usr/local/google-cloud-sdk/completion.bash.inc'
+source "$HOME/google-cloud-sdk/completion.bash.inc"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mark.schisler/google-cloud-sdk/path.bash.inc' ]; then source '/Users/mark.schisler/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mark.schisler/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/mark.schisler/google-cloud-sdk/completion.bash.inc'; fi

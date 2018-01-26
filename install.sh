@@ -4,12 +4,13 @@ git submodule update --init --recursive
 brew install bash-completion
 brew install heroku
 brew install python
-pip install --upgrade pip
-pip install bpython
-pip install logcat-color
-pip install flake8
-pip install pylint
-
+brew install go
+sudo easy_install pip
+sudo pip install --upgrade pip
+sudo pip install --user bpython --ignore-installed six
+sudo pip install logcat-color
+sudo pip install flake8
+sudo pip install pylint
 curl https://sdk.cloud.google.com | bash
 rm -rf ~/.bash_profile
 rm -rf ~/.tmux.conf
