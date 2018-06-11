@@ -8,6 +8,7 @@ brew install bash-completion
 brew install heroku
 brew install python
 brew install go
+brew install git-lfs
 brew cask install iterm2
 sudo easy_install pip
 sudo pip install --upgrade pip
