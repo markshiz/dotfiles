@@ -12,7 +12,7 @@ export CLICOLOR="true"
 export TERM="xterm-256color"
 export NODE_PATH=/usr/local/lib/node_modules
 export PYTHONSTARTUP=~/.pythonrc.py
-export PATH=$HOME/.rvm/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/Applications/MAMP/Library/bin:/usr/local/android/ndk/current:/usr/local/android/sdk/current/tools:/usr/local/android/sdk/current/platform-tools:/usr/local/opt/go/libexec/bin:/usr/local/heroku/bin:$HOME/bin:$PATH
+export PATH=$HOME/.rvm/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/Applications/MAMP/Library/bin:/usr/local/android/ndk/current:/usr/local/android/sdk/current/tools:/usr/local/android/sdk/current/platform-tools:/usr/local/opt/go/libexec/bin:/usr/local/heroku/bin:$HOME/bin:~/.dotfiles/bin:$PATH
 export ANDROID_HOME=/usr/local/android/sdk/current/
 export GOPATH="/c/"
 
