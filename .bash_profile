@@ -1,12 +1,3 @@
-case $TERM in
-     xterm*)
-        PS1="\[\033]0;\u@\h: \w\007\]$PS1"
-        ;;
-     *)
-      PS1="$PS1"
-      ;;
- esac
-
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR="true"
 export TERM="xterm-256color"
@@ -26,17 +17,17 @@ alias fgrep='fgrep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias be='bundle exec'
 alias tmux='TERM=xterm-256color tmux'
-alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
-alias lcc="logcat-color"
+alias pg_start='brew services postgresql start'
+alias pg_stop='brew services postgresql stop'
+alias lcc='logcat-color'
 
 set -o vi
 source $HOME/.rvm/scripts/rvm
 source $HOME/.dotfiles/powerline.bash/bash-powerline.sh
 source $HOME/.dotfiles/bash16.bash/base16-default.dark.sh
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
+if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+  . `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
 
 if which pyspark > /dev/null; then
@@ -48,13 +39,7 @@ fi
 export SPARK_LOCAL_IP="127.0.0.1"
 
 # The next line updates PATH for the Google Cloud SDK.
-source "$HOME/google-cloud-sdk/path.bash.inc"
+if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then  source "$HOME/google-cloud-sdk/path.bash.inc"
 
 # The next line enables shell command completion for gcloud.
-source "$HOME/google-cloud-sdk/completion.bash.inc"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/mark.schisler/google-cloud-sdk/path.bash.inc' ]; then source '/Users/mark.schisler/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/mark.schisler/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/mark.schisler/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; source "$HOME/google-cloud-sdk/completion.bash.inc"
