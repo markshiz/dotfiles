@@ -26,9 +26,7 @@ source $HOME/.rvm/scripts/rvm
 source $HOME/.dotfiles/powerline.bash/bash-powerline.sh
 source $HOME/.dotfiles/bash16.bash/base16-default.dark.sh
 
-if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
-  . `brew --prefix`/etc/bash_completion.d/git-completion.bash
-fi
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 if which pyspark > /dev/null; then
   export SPARK_HOME="/usr/local/Cellar/apache-spark/2.1.0/libexec/"
@@ -39,7 +37,8 @@ fi
 export SPARK_LOCAL_IP="127.0.0.1"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then  source "$HOME/google-cloud-sdk/path.bash.inc"
+source "$HOME/google-cloud-sdk/path.bash.inc"
 
 # The next line enables shell command completion for gcloud.
-if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; source "$HOME/google-cloud-sdk/completion.bash.inc"
+source "$HOME/google-cloud-sdk/completion.bash.inc"
+
