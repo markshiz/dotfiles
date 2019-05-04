@@ -3,15 +3,13 @@ export CLICOLOR="true"
 export TERM="xterm-256color"
 export NODE_PATH=/usr/local/lib/node_modules
 export PYTHONSTARTUP=~/.pythonrc.py
-export PATH=$HOME/.rvm/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/Applications/MAMP/Library/bin:/usr/local/android/ndk/current:/usr/local/android/sdk/current/tools:/usr/local/android/sdk/current/platform-tools:/usr/local/opt/go/libexec/bin:/usr/local/heroku/bin:$HOME/bin:~/.dotfiles/bin:$PATH
+export PATH=$HOME/.rvm/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/Applications/MAMP/Library/bin:/usr/local/android/ndk/current:/usr/local/android/sdk/current/tools:/usr/local/android/sdk/current/platform-tools:/usr/local/opt/go/libexec/bin:/usr/local/heroku/bin:$HOME/bin:~/.dotfiles/bin::/c/bin/:$PATH
 export ANDROID_HOME=/usr/local/android/sdk/current/
 export GOPATH="/c/"
 
 alias g='git'
 alias grep='grep --color=auto'
 alias l='ls -CF'
-alias dir='ls -all'
-alias cls='clear'
 alias grep='grep --colour=auto'
 alias fgrep='fgrep --colour=auto'
 alias egrep='egrep --colour=auto'
@@ -42,3 +40,4 @@ source "$HOME/google-cloud-sdk/path.bash.inc"
 # The next line enables shell command completion for gcloud.
 source "$HOME/google-cloud-sdk/completion.bash.inc"
 
+export PATH="$HOME/.fastlane/bin:$PATH"
