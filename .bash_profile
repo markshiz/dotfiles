@@ -22,7 +22,7 @@ alias lcc='logcat-color'
 set -o vi
 source $HOME/.rvm/scripts/rvm
 source $HOME/.dotfiles/powerline.bash/bash-powerline.sh
-source $HOME/.dotfiles/bash16.bash/base16-default.dark.sh
+source $HOME/.dotfiles/bash16.bash/base16-default.light.sh
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
