@@ -98,13 +98,24 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export BULLETTRAIN_DIR_BG="#305a78"
+export BULLETTRAIN_RUBY_BG="#783030"
+export BULLETTRAIN_PROMPT_ORDER=(
+  dir
+  ruby
+  elixir
+  go
+  git
+)
+export BULLETTRAIN_DIR_EXTENDED=2
+
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR="true"
 export TERM="xterm-256color"
 export NODE_PATH=/usr/local/lib/node_modules
 export PYTHONSTARTUP=~/.pythonrc.py
 export ANDROID_HOME=/usr/local/android/sdk/current/
-export GOPATH="/c/"
+export GOPATH="$HOME/c/"
 
 alias g='git'
 alias grep='grep --color=auto'
@@ -124,4 +135,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 source "$HOME/google-cloud-sdk/path.zsh.inc"
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
+
 
