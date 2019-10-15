@@ -135,5 +135,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 source "$HOME/google-cloud-sdk/path.zsh.inc"
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
-
-
+source "$(brew --prefix)/etc/profile.d/z.sh"
