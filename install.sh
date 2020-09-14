@@ -3,7 +3,7 @@
 xcode-select --install
 git submodule update --init --recursive
 brew install macvim
-brew install heroku
+brew install heroku/brew/heroku
 brew install python
 brew install go
 brew install git-lfs
@@ -26,5 +26,3 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/.pythonrc.py ~/.pythonrc.py
 \curl -sSL https://get.rvm.io | zsh -s stable
-sudo mkdir -p /c/
-sudo chmod a+rwx /c/
