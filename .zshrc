@@ -114,7 +114,6 @@ export CLICOLOR="true"
 export TERM="xterm-256color"
 export NODE_PATH=/usr/local/lib/node_modules
 export PYTHONSTARTUP=~/.pythonrc.py
-export ANDROID_HOME=/usr/local/android/sdk/current/
 export GOPATH="$HOME/c/"
 
 alias g='git'
@@ -129,10 +128,21 @@ alias pg_start='brew services postgresql start'
 alias pg_stop='brew services postgresql stop'
 alias lcc='logcat-color'
 
-export PATH=/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/local/android/ndk/current:/usr/local/android/sdk/current/tools:/usr/local/android/sdk/current/platform-tools:/usr/local/opt/go/libexec/bin:$HOME/bin:~/.dotfiles/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/local/opt/go/libexec/bin:$HOME/bin:~/.dotfiles/bin:$PATH
 export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 source "$HOME/google-cloud-sdk/path.zsh.inc"
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
 source "$(brew --prefix)/etc/profile.d/z.sh"
+
+#export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_HOME=$(/usr/libexec/java_home -v11)
+export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$JAVA_HOME"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+
