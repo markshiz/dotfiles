@@ -137,9 +137,9 @@ source "$HOME/google-cloud-sdk/completion.zsh.inc"
 source "$(brew --prefix)/etc/profile.d/z.sh"
 
 #export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
-export JAVA_HOME=$(/usr/libexec/java_home -v11)
+export JAVA_HOME=$(/usr/libexec/java_home -v14)
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$JAVA_HOME"
+export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$JAVA_HOME"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
@@ -148,3 +148,6 @@ export NVM_DIR="$HOME/.nvm"
 # openssl for connectedhomeip project
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
+
+# xc16
+export PATH="/Applications/microchip/xc16/v1.61/bin:$PATH"
