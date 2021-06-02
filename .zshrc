@@ -68,7 +68,7 @@ ZSH_CUSTOM=~/.dotfiles/zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby rvm vi-mode vim-interaction mix mix-fast heroku golang golang github gem adb)
+plugins=(git ruby rvm vi-mode vim-interaction mix mix-fast heroku golang golang github gem adb env)
 
 source $ZSH/oh-my-zsh.sh
 

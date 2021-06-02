@@ -7,3 +7,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "zsh-custom/plugins/env"]
+	path = zsh-custom/plugins/env
+	url = https://github.com/johnhamelink/env-zsh.git
