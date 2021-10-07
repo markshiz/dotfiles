@@ -68,7 +68,7 @@ ZSH_CUSTOM=~/.dotfiles/zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby rvm vi-mode vim-interaction mix mix-fast heroku golang golang github gem adb env)
+plugins=(git ruby rbenv vi-mode vim-interaction mix mix-fast heroku golang golang github gem adb env)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -130,7 +130,6 @@ alias lcc='logcat-color'
 
 export PATH=/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/local/opt/go/libexec/bin:$HOME/bin:~/.dotfiles/bin:$PATH
 export PATH="$HOME/.fastlane/bin:$PATH"
-export PATH="$PATH:$HOME/.rvm/bin"
 
 source "$HOME/google-cloud-sdk/path.zsh.inc"
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
@@ -151,3 +150,6 @@ export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 
 # xc16
 export PATH="/Applications/microchip/xc16/v1.61/bin:$PATH"
+
+# rbenv
+eval "$(rbenv init - zsh)"
