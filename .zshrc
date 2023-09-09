@@ -129,14 +129,12 @@ alias pg_stop='brew services postgresql stop'
 alias lcc='logcat-color'
 
 export PATH=/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/local/opt/go/libexec/bin:$HOME/bin:~/.dotfiles/bin:$PATH
-export PATH="$HOME/.fastlane/bin:$PATH"
 
 source "$HOME/google-cloud-sdk/path.zsh.inc"
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
 source "$(brew --prefix)/etc/profile.d/z.sh"
 
-#export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
-export JAVA_HOME=$(/usr/libexec/java_home -v14)
+export JAVA_HOME=$(/usr/libexec/java_home -v17)
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$JAVA_HOME"
 
