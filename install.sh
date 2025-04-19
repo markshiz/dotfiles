@@ -18,12 +18,8 @@ brew install nvm
 brew install rbenv ruby-build
 brew cask install iterm2
 brew install z
-sudo easy_install pip
-sudo pip install --upgrade pip
-sudo pip install --user bpython --ignore-installed six
-sudo pip install logcat-color
-sudo pip install flake8
-sudo pip install pylint
+pip3 install flake8
+pip3 install pylint
 source powerline_fonts/install.sh
 curl https://sdk.cloud.google.com | zsh
 rm -rf ~/.zshrc

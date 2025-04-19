@@ -126,7 +126,7 @@ alias be='bundle exec'
 alias tmux='TERM=xterm-256color tmux'
 alias pg_start='brew services postgresql start'
 alias pg_stop='brew services postgresql stop'
-alias lcc='logcat-color'
+alias lcc='adb logcat -v color'
 
 export PATH=/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/local/opt/go/libexec/bin:$HOME/bin:~/.dotfiles/bin:$PATH
 
@@ -141,13 +141,6 @@ export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/plat
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-
-# openssl for connectedhomeip project
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
-
-# xc16
-export PATH="/Applications/microchip/xc16/v1.61/bin:$PATH"
 
 # rbenv
 eval "$(rbenv init - zsh)"
