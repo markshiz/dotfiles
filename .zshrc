@@ -68,7 +68,7 @@ ZSH_CUSTOM=~/.dotfiles/zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby rbenv vi-mode vim-interaction mix mix-fast heroku golang golang github gem adb env)
+plugins=(git ruby rbenv vi-mode vim-interaction mix mix-fast heroku golang golang github gem env)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -134,7 +134,7 @@ source "$HOME/google-cloud-sdk/path.zsh.inc"
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
 source "$(brew --prefix)/etc/profile.d/z.sh"
 
-export JAVA_HOME=$(/usr/libexec/java_home -v17)
+export JAVA_HOME=$(/usr/libexec/java_home -v21)
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$JAVA_HOME"
 
